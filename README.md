@@ -24,7 +24,7 @@ Esta es una aplicación para ver y administrar noticias. Permite a los usuarios 
 https://github.com/diegoh40/lidera-prueba.git
 
 2. Navega hasta el directorio del proyecto:
-cd leadera-prueba
+cd lidera-prueba
 
 3. Instala las dependencias con el comando:
 npm install
