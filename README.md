@@ -47,9 +47,9 @@ npm run serve
 
 ## Screenshots
 
-<img src="/src/assets/screenshots/login.png" alt="Autenticacion" width="300">
-<img src="/src/assets/screenshots/news.png" alt="seccion news" width="300">
-<img src="/src/assets/screenshots/favorites.png" alt="Autenticacion" width="300">
+<img src="/src/assets/screenshots/login.png" alt="Autenticacion" width="600">
+<img src="/src/assets/screenshots/news.png" alt="seccion news" width="600">
+<img src="/src/assets/screenshots/favorites.png" alt="Autenticacion" width="600">
 
 
 ## Contribuciones
