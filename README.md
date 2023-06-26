@@ -21,7 +21,7 @@ Esta es una aplicación para ver y administrar noticias. Permite a los usuarios 
 ## Instrucciones de Uso
 
 1. Clona el repositorio en tu máquina local:
-https://github.com/diegoh40/lidera-prueba-tecnica.git
+https://github.com/diegoh40/lidera-prueba.git
 
 2. Navega hasta el directorio del proyecto:
 cd leadera-prueba-tecnica
