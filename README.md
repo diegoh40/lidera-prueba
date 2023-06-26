@@ -1,5 +1,6 @@
 # Lidera-prueba-tecnica-Diego Hernández
 
+
 # Aplicación de Noticias
 
 Esta es una aplicación para ver y administrar noticias. Permite a los usuarios explorar una lista de noticias y agregar artículos a su lista de favoritos. También pueden eliminar noticias de la lista de favoritos.
