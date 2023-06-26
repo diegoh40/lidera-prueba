@@ -21,17 +21,21 @@ Esta es una aplicación para ver y administrar noticias. Permite a los usuarios 
 ## Instrucciones de Uso
 
 1. Clona el repositorio en tu máquina local:
+```sh
 https://github.com/diegoh40/lidera-prueba.git
-
+```
 2. Navega hasta el directorio del proyecto:
+```sh
 cd lidera-prueba
-
+```
 3. Instala las dependencias con el comando:
-npm install
-
+```sh
+ npm install
+```
 4. Inicia la aplicación:
-npm run serve
-
+```sh
+ npm run serve
+```
 5. Abre tu navegador web y accede a la dirección: `http://localhost:8080`.
 
 6. Para autenticarte, utiliza las siguientes credenciales:
