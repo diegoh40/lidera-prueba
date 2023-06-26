@@ -1,0 +1,342 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Estilo Componente App */
+
+  .footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  
+  .author-year {
+    display: block;
+    margin: 0;
+  }
+
+  /* Estilo Componente Autenticación */
+
+  .login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .news-image {
+    max-width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .auth-message {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #888;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    width: 100%;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .login-button {
+    background-color: #1890ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login-button:hover {
+    background-color: #096dd9;
+  }
+  
+  @media (max-width: 480px) {
+    .login-container {
+      padding: 15px;
+    }
+  
+    .title {
+      font-size: 22px;
+    }
+  
+    .news-image {
+      max-width: 150px;
+    }
+  
+    .auth-message {
+      font-size: 12px;
+      margin-bottom: 15px;
+    }
+  
+    input[type="email"],
+    input[type="password"] {
+    padding: 8px;
+    font-size: 14px;
+    }
+  
+    .login-button {
+    padding: 10px;
+    }
+    }
+
+     /* Estilo Componente Favorites */
+
+     .favorites-heading {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      
+      .favorites-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .logo-link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #333;
+      }
+      
+      .logo-image {
+        max-height: 40px; 
+        margin-right: 5px;
+      }
+      
+      .return-text {
+        font-size: 14px;
+      }
+      
+      .return-link:hover {
+        color: #1890ff;
+      }
+      .favorites-item {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color: #f8f9fa;
+        border-radius: 4px;
+      }
+      
+      .favorites-content {
+        flex: 1;
+      }
+      
+      .favorites-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      
+      .favorites-image {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        margin-bottom: 10px;
+      }
+      
+      .favorites-description {
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+      
+      .favorites-date {
+        font-size: 12px;
+        color: #888;
+      }
+      
+      .favorites-remove-button {
+        background-color: #dc3545;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 4px;
+      }
+      
+      @media (max-width: 480px) {
+        .favorites-item {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+      /* Estilo Componente Navbar */
+
+      .favorites-count {
+        margin-left: 5px;
+        background-color: #ffc107;
+        color: #dc3545;
+        padding: 4px 8px;
+        border-radius: 50%;
+      }
+      
+      nav {
+        background-color: #f2f2f2;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+      }
+      
+      .logo-container {
+        margin-right: 10px;
+      }
+      
+      .logo {
+        width: 40px;
+        height: 40px;
+      }
+      
+      .nav-links {
+        font-size: 23px;
+        flex-grow: 1;
+       
+      }
+      
+      .nav-link {
+        margin-right: 10px;
+        text-decoration: none;
+        color: #333;        
+        transition: color 0.3s;
+      }
+      .nav-link:visited {
+        color: purple;
+      }
+      .nav-link:hover {
+        color: red;
+      }
+      
+      .logout-button {
+        border: none;
+        background-color: #007bff;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .logout-button:hover {
+        background-color: #0056b3;
+      }
+      
+      .favorites-count {
+        margin-left: 10px;
+        font-weight: bold;
+      }
+      
+      .sticky-nav {
+        position: sticky;
+        top: 0;
+        background-color: #e2e2e2;
+      }
+
+    /* Estilo Componente Newslist */
+      
+    .news-list-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      
+      .news-list {
+        display: grid;
+        gap: 10px;
+      }
+      
+      .news-item {
+        display: flex;
+        align-items: center;
+        background-color: #f8f9fa;
+        border-radius: 4px;
+        padding: 10px;
+      }
+      
+      .news-item-image {
+        flex: 0 0 100px;
+        margin-right: 10px;
+      }
+      
+      .news-item-image-img {
+        max-width: 100%;
+        height: auto;
+      }
+      
+      .news-item-content {
+        flex: 1;
+      }
+      
+      .news-item-title {
+        font-family: 'Arial', sans-serif;
+      }
+      
+      .news-item-description {
+        margin-bottom: 10px;
+      }
+      
+      .add-button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 10px;
+      }
+      
+      .add-button:hover {
+        background-color: #0056b3;
+      }
+      
+      .news-item-id {
+        font-weight: bold;
+      }
