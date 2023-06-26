@@ -45,6 +45,11 @@ npm run serve
 - [Documentación de Vue 3](https://v3.vuejs.org/)
 - [API de Noticias](https://newsapi.org/)
 
+## Screenshots
+
+![Autenticacion](/src/assets/screeshots/login.png)
+
+
 ## Contribuciones
 
 Las contribuciones a esta aplicación son bienvenidas. Si tienes alguna idea de mejora, sugerencia o encuentras algún problema, no dudes en abrir un issue o enviar un pull request.
