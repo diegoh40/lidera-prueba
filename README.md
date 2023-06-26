@@ -47,7 +47,7 @@ npm run serve
 
 ## Demo
 
-Puedes ver una demostración de la aplicación [aquí](URL_DE_DEPLOYMENT).
+Puedes ver una demostración de la aplicación [aquí](https://diegoh40.github.io/lidera-prueba-tecnica/).
 
 ## Contribuciones
 
