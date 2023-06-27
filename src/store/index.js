@@ -8,7 +8,8 @@ const store = createStore({
     return {
       isAuthenticated: false,
       news: [],
-      favorites: []
+      favorites: [],
+      favoritesNews: []
     };
   },
   actions,

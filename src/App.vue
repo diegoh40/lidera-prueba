@@ -10,7 +10,8 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
+//import { mapGetters } from 'vuex';
+import { mapState } from 'vuex';
 import Authentication from './components/Authentication.vue';
 import Navbar from './components/Navbar.vue';
 
@@ -20,8 +21,13 @@ export default {
     Authentication
   },
   computed: {
+    ...mapState({
+      isAuthenticated: state => state.isAuthenticated
+    })
+  }
+  /* computed: {
     ...mapGetters(['isAuthenticated'])
-  },
+  } */,
   watch: {
     isAuthenticated(newVal) {
       this.isLoggedIn = newVal;

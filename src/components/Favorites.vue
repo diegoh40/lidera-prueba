@@ -33,10 +33,28 @@ export default {
   computed: {
     ...mapState({
       favoriteNews: state => state.favorites
-    })
+    }),
+    filteredFavorites() {
+      const uniqueFavorites = [];
+      const favoriteIds = [];
+      for (const favorite of this.favoriteNews) {
+        if (!favoriteIds.includes(favorite.id)) {
+          uniqueFavorites.push(favorite);
+          favoriteIds.push(favorite.id);
+        }
+      }
+      return uniqueFavorites;
+    }
   },
   methods: {
-    ...mapActions(['removeNewsFromFavorite']),
+    ...mapActions(['addNewsToFavorite', 'removeNewsFromFavorite']),
+    addToFavorites(news) {
+      const isAlreadyAdded = this.favoriteNews.some(favorite => favorite.id === news.id);
+      if (!isAlreadyAdded) {
+        this.addNewsToFavorite(news);
+        localStorage.setItem('favoriteNews', JSON.stringify(this.favoriteNews));
+      }
+    },
     removeFromFavorites(newsId) {
       this.removeNewsFromFavorite(newsId);
       localStorage.setItem('favoriteNews', JSON.stringify(this.favoriteNews));
@@ -44,6 +62,12 @@ export default {
     formatDate(date) {
       return moment(date).format('YYYY-MM-DD');
     }
+  },
+  created() {
+    const uniqueFavorites = this.favoriteNews.reduce((unique, favorite) => {
+      return unique.some(item => item.id === favorite.id) ? unique : [...unique, favorite];
+    }, []);
+    this.$store.commit('setFavorites', uniqueFavorites);
   }
 };
 </script>

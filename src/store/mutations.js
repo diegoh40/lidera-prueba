@@ -19,6 +19,12 @@ export default {
       if (index !== -1) {
         state.favorites.splice(index, 1);
       }
+    },
+    setFavorites(state, favorites) {  
+      const uniqueFavorites = favorites.reduce((unique, favorite) => {
+        return unique.some(item => item.id === favorite.id) ? unique : [...unique, favorite];
+      }, []);
+      state.favorites = uniqueFavorites;
     }
   };
   

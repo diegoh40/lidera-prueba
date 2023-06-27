@@ -36,9 +36,9 @@ export default {
     addToFavorites(news) {
       this.addNewsToFavorite(news);
     },
-    removeFromFavorites(newsId) {
+    /* removeFromFavorites(newsId) {
       this.removeNewsFromFavorite(newsId);
-    }
+    } */
   },
   created() {
     this.$store.dispatch('fetchNews');
